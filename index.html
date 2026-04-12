@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仁归 · 自然之梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)), 
+                        url("自然之梦.jpg") center center / cover no-repeat fixed;
+            min-height: 100vh;
+            color: #2c3e50;
+        }
+
+        .nav {
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.4);
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2d7d5a;
+        }
+        .nav-btn {
+            padding: 8px 16px;
+            border-radius: 30px;
+            border: none;
+            background: #2d7d5a;
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .section1 {
+            padding: 80px 5%;
+            text-align: center;
+        }
+        .slogan {
+            font-size: 28px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: #1f4e3a;
+        }
+        .main-btn {
+            padding: 16px 40px;
+            font-size: 18px;
+            border-radius: 50px;
+            border: none;
+            background: #2d7d5a;
+            color: white;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .sub-btn {
+            padding: 14px 32px;
+            font-size: 16px;
+            border-radius: 50px;
+            border: 1px solid #2d7d5a;
+            background: rgba(255,255,255,0.6);
+            color: #2d7d5a;
+            cursor: pointer;
+        }
+
+        .section2 {
+            padding: 60px 5%;
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(4px);
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #2d7d5a;
+        }
+        .func-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .func-btn {
+            width: 220px;
+            padding: 25px 20px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.8);
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .section3 {
+            padding: 70px 5%;
+            text-align: center;
+        }
+
+        /* 底部绿色宽带 · 全包版 */
+        .footer {
+            padding: 35px 5%;
+            background: #2d7d5a; /* 纯绿色底色，无渐变 */
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<div class="nav">
+    <div class="logo">仁归 · 自然之梦</div>
+    <div>
+        <button class="nav-btn" id="login">登录 / 注册</button>
+        <button class="nav-btn" id="help">帮助</button>
+    </div>
+</div>
+
+<!-- 第一阶段：自我解放 -->
+<div class="section1">
+    <div class="slogan">
+        心有枷锁，需要慢慢打开。<br>
+        在这里，你只需要被看见，不需要被改变。
+    </div>
+    <button class="main-btn" id="feel">说出今天的感受</button>
+    <button class="sub-btn" id="support">需要陪伴与支持</button>
+</div>
+
+<!-- 第二阶段：修心养性 -->
+<div class="section2">
+    <div class="title">修心养性 · 安顿身心 · 心身和解 · 自然光明</div>
+    <div class="func-box">
+        <button class="func-btn" id="breath">静心呼吸</button>
+        <button class="func-btn" id="aware">温柔觉察</button>
+        <button class="func-btn" id="daily">日常安顿</button>
+        <button class="func-btn" id="emotion">情绪释放入口</button>
+        <button class="func-btn" id="light">轻陪伴服务</button>
+        <button class="func-btn" id="safe">安全支持通道</button>
+    </div>
+</div>
+
+<!-- 第三阶段：觉悟仁性 -->
+<div class="section3">
+    <div class="slogan">
+        见自己，见天地，见众生。<br>
+        回归人性本如的「仁」，活出温柔而坚定的仁格。
+    </div>
+    <div class="func-box">
+        <button class="func-btn" id="see">看见自己</button>
+        <button class="func-btn" id="be">成为自己</button>
+        <button class="func-btn" id="together">仁归同行</button>
+        <button class="func-btn" id="practice">仁性实践</button>
+    </div>
+</div>
+
+<!-- 底部绿色宽带 -->
+<div class="footer">
+    © 2026【 仁归 / 自然之梦 】关注与陪伴，身心压抑，精神抑郁人群，自我解放。修心养性，觉悟仁性。<br>
+   </p> 隐私政策  |  用户协议  |  紧急心理援助通道      </p>
+   </p>创意创建开发者：        南山居士  /  尘间盲克    </p>
+   </p>创意创建技术协助：    DBJSZ        </p>
+    <br>
+
+<br>
+    <small>本项目版式、文案及视觉设计，均受版权保护，未经授权，禁止复制，转载，恶意盗用。</small>
+</div>
+
+<!-- 按钮跳转逻辑 -->
+<script>
+document.querySelectorAll('button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const map = {
+      login: 'login.html',
+      help: 'help.html',
+      feel: 'chat.html',
+      support: 'support.html',
+      breath: 'breath.html',
+      aware: 'aware.html',
+      daily: 'daily.html',
+      emotion: 'emotion.html',
+      light: 'light.html',
+      safe: 'safe.html',
+      see: 'see.html',
+      be: 'be.html',
+      together: 'together.html',
+      practice: 'practice.html'
+    };
+    const to = map[btn.id];
+    if (to) window.location.href = to;
+  })
+})
+</script>
+
+</body>
+</html>
