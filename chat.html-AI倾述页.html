@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仁归 · AI倾诉</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei","PingFang SC",sans-serif}
+body{background:linear-gradient(135deg,rgba(245,248,245,.95),rgba(235,242,238,.95));min-height:100vh;color:#2d3e3a}
+.top-bar{padding:15px 5%;background:rgba(255,255,255,.7);backdrop-filter:blur(8px);border-bottom:1px solid rgba(45,125,90,.1)}
+.back-link{color:#2d7d5a;font-size:14px;text-decoration:none}
+.container{max-width:800px;margin:0 auto;padding:40px 5%}
+.page-title{font-size:32px;font-weight:bold;color:#2d7d5a;margin-bottom:30px;text-align:center}
+.chat-wrapper{background:rgba(255,255,255,.85);border-radius:16px;padding:28px;box-shadow:0 4px 16px rgba(45,125,90,.08);height:500px;display:flex;flex-direction:column}
+.chat-history{flex:1;overflow-y:auto;padding:10px;line-height:1.7}
+.msg-bubble{max-width:75%;padding:10px 14px;border-radius:12px;margin-bottom:12px}
+.ai{background:#e6f2ec;color:#2d7d5a;align-self:flex-start}
+.user{background:#2d7d5a;color:#fff;align-self:flex-end;margin-left:auto}
+.chat-input-area{display:flex;gap:10px;margin-top:16px}
+.chat-input{flex:1;padding:12px 16px;border:1px solid rgba(45,125,90,.2);border-radius:12px;font-size:15px}
+.send-btn{padding:12px 24px;background:#2d7d5a;color:white;border:none;border-radius:12px;cursor:pointer}
+.send-btn:hover{background:#236a4a}
+.footer{width:100%;padding:35px 5%;background:#2d7d5a;color:white;text-align:center;font-size:15px;line-height:1.8;margin-top:40px}
+.footer small{font-size:13px;opacity:.9}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+<a href="index.html" class="back-link">← 返回心灵家园</a>
+</div>
+
+<div class="container">
+<h1 class="page-title">AI 温柔倾诉</h1>
+<div class="chat-wrapper">
+<div class="chat-history">
+<div class="msg-bubble ai">你好呀，我在这里听你慢慢说。</div>
+</div>
+<div class="chat-input-area">
+<input class="chat-input" placeholder="写下你的心情...">
+<button class="send-btn">发送</button>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+    © 2026【 仁归 / 自然之梦 】关注与陪伴，身心压抑，精神抑郁人群，自我解放。修心养性，仁性觉醒。<br>
+   </p> 隐私政策  |  用户协议  |  紧急心理援助通道      </p>
+   </p>创意创建开发者：        南山居士  /  尘间盲克    </p>
+   </p>创意创建技术协助：    DBJSZ        </p>
+    <br>
+
+<br>
+    <small>本项目版式、文案及视觉设计，均受版权保护，未经授权，禁止复制，转载，恶意盗用。</small>
+</div>
+
+
+
+<script>
+document.querySelector('.send-btn').addEventListener('click',function(){
+const i=document.querySelector('.chat-input');if(!i.value)return
+const h=document.querySelector('.chat-history')
+const u=document.createElement('div');u.className='msg-bubble user';u.textContent=i.value
+h.appendChild(u)
+i.value=''
+setTimeout(()=>{
+const a=document.createElement('div');a.className='msg-bubble ai'
+a.textContent='我收到啦，我会一直陪着你。'
+h.appendChild(a);h.scrollTop=h.scrollHeight
+},700)
+})
+</script>
+</body>
+</html>
